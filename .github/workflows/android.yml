@@ -39,7 +39,7 @@ jobs:
       - name: Create out directory
         run: mkdir out
       - name: Build Publishing .aab
-        if: github.repository_owner == 'MicBallo67YT' && github.ref_name == 'v3_openjdk'
+        if: github.repository_owner == 'MojoLauncher' && github.ref_name == 'v3_openjdk'
         run: |
           gradle :app_pojavlauncher:bundleFullGplay
           mv app_pojavlauncher/build/outputs/bundle/fullGplay/app_pojavlauncher-full-gplay.aab out/app-gplay.aab
